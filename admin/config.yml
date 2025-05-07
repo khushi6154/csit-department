@@ -1,0 +1,53 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "staff"
+    label: "Staff Members"
+    folder: "content/staff"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Designation", name: "designation", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Contact", name: "contact", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image" }
+
+  - name: "faculty"
+    label: "Faculty Members"
+    folder: "content/faculty"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Designation", name: "designation", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Contact", name: "contact", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image" }
+
+  - name: "research"
+    label: "Research Scholars"
+    folder: "content/research"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Area of Research", name: "area", widget: "string" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Contact", name: "contact", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image" }
+
+  - name: "notices"
+    label: "Notices & Events"
+    folder: "content/notices"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "body", widget: "markdown" }

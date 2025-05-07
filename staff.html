@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff - Department of CSIT</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .tab-button {
+      padding: 10px 20px;
+      border: 2px solid #004aad;
+      background-color: white;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+      border-radius: 10px;
+    }
+
+    .tab-button.active {
+      background-color: #004aad;
+      color: white;
+    }
+
+    .tab-content {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .member-card {
+      display: flex;
+      align-items: center;
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .member-card img {
+      width: 100px;
+      height: 120px;
+      object-fit: cover;
+      margin-right: 15px;
+      border-radius: 5px;
+    }
+
+    .member-info {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!--Navigation Bar-->
+  <nav style="text-align: right;background-color: #002147; padding:10px;">
+    <a href="index.html" style="margin: 0 15px;">Home</a>
+    <a href="about.html" style="margin: 0 15px;">About</a>
+    <a href="dean.html" style="margin: 0 15px;">Dean</a>
+    <a href="hod.html" style="margin: 0 15px;">HOD</a>
+    <a href="courses.html" style="margin: 0 15px;">Courses</a>
+    <a href="staff.html" style="margin: 0 15px;">Staff</a>
+    <a href="gallery.html" style="margin: 0 15px;">Gallery</a>
+    <a href="contact.html" style="margin: 0 15px;">Contact</a>
+  </nav>
+
+  <div style="text-align: center; margin-bottom: 20px;">
+    <img src="logo.jpg" alt="University Logo" style="max-width: 150px;">
+    <h2>Staff of <span style="color: white;">Department of Computer Science & Information Technology</span></h2>
+  </div>
+
+  <div class="tabs" style="text-align: center;">
+    <button class="tab-button active" onclick="showTab(event, 'faculty')">Faculty Member</button>
+    <button class="tab-button" onclick="showTab(event, 'staff')">Staff Member</button>
+    <button class="tab-button" onclick="showTab(event, 'research')">Research Scholars</button>
+  </div>
+
+  <div id="faculty" class="tab-content active">
+    <!-- Faculty Members -->
+    <div class="member-card">
+      <img src="Prof_AK_saxena.jpg" alt="Prof. A.K. Saxena">
+      <div class="member-info">
+        <strong>Prof. A.K. Saxena</strong><br>
+        Professor<br>
+        Email: amitsaxena65@rediffmail.com<br>
+        Contact: 07752-260356, 94252-22744
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Ratnesh_Prasad_Srivastava.jpg" alt="Ratnesh Prasad Srivastava">
+      <div class="member-info">
+        <strong>Ratnesh Prasad Srivastava</strong><br>
+        Associate Professor<br>
+        Email: ratnesh.csit@ggu.ac.in<br>
+        Contact: 6397843737
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Girish_Kumar_Singh.jpg" alt="Girish Kumar Singh">
+      <div class="member-info">
+        <strong>Girish Kumar Singh</strong><br>
+        Associate Professor<br>
+        Email: gkrsingh@gmail.com<br>
+        Contact: 9479983851
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Shrabanti_Mandal.jpg" alt="Shrabanti Mandal">
+      <div class="member-info">
+        <strong>Shrabanti Mandal</strong><br>
+        Associate Professor<br>
+        Email: shrabanti.mandal@ggu.ac.in<br>
+        Contact: 7006435642
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Pushplata_Pujari.jpg" alt="Pushplata Pujari">
+      <div class="member-info">
+        <strong>Pushplata Pujari</strong><br>
+        Assistant Professor<br>
+        Email: pujari.lata@rediffmail.com<br>
+        Contact: 82690-76954
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Rajwant_singh_rao.jpeg" alt="Rajwant Singh Rao">
+      <div class="member-info">
+        <strong>Rajwant Singh Rao</strong><br>
+        Assistant Professor<br>
+        Email: rajwantrao@gmail.com<br>
+        Contact: 88275-72070
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Amitesh_jha.jpg" alt="Amitesh Kumar Jha">
+      <div class="member-info">
+        <strong>Amitesh Kumar Jha</strong><br>
+        Assistant Professor<br>
+        Email: amitesh2911@yahoo.co.in<br>
+        Contact: 98279-30291
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Sushma_Jaiswal.jpg" alt="Sushma Jaiswal">
+      <div class="member-info">
+        <strong>Sushma Jaiswal</strong><br>
+        Assistant Professor<br>
+        Email: jaiswal1302@gmail.com<br>
+        Contact: 99937-81013
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Babita_Majhi.jpg" alt="Babita Majhi">
+      <div class="member-info">
+        <strong>Babita Majhi</strong><br>
+        Assistant Professor<br>
+        Email: babita.majhi@gmail.com<br>
+        Contact: 90987-15203
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Akhilesh_shrivas.jpg" alt="Akhilesh Kumar Shrivas">
+      <div class="member-info">
+        <strong>Akhilesh Kumar Shrivas</strong><br>
+        Assistant Professor<br>
+        Email: proffshrivas@gmail.com<br>
+        Contact: 90981-74759
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Amit_chandana.jpg" alt="Amit Kumar Chandanan">
+      <div class="member-info">
+        <strong>Amit Kumar Chandanan</strong><br>
+        Assistant Professor<br>
+        Email: chandanan.amitggv@gmail.com<br>
+        Contact: 94251-51309
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Abhsihek_patel.jpg" alt="Abhishek Patel">
+      <div class="member-info">
+        <strong>Abhishek Patel</strong><br>
+        Assistant Professor<br>
+        Email: patel.abhishek@ggu.ac.in<br>
+        Contact: 95842-96307
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Vaishnav.jpg" alt="Prashant Vaishnav">
+      <div class="member-info">
+        <strong>Prashant Vaishnav</strong><br>
+        Assistant Professor<br>
+        Email: prashanth.vaishnav@gmail.com<br>
+        Contact: 91319-22305
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Vikas_pandey.jpg" alt="Vikas Kumar Pandey">
+      <div class="member-info">
+        <strong>Vikas Kumar Pandey</strong><br>
+        Assistant Professor<br>
+        Email: vikaspandeymmyvv@gmail.com<br>
+        Contact: 093033-38726
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Vivek_Kumar_Sarathe.jpg" alt="Vivek Kumar Sarathe">
+      <div class="member-info">
+        <strong>Vivek Kumar Sarathe</strong><br>
+        Assistant Professor<br>
+        Email: vivek.sarathe@ggu.ac.in, v_sarathe@hotmail.com<br>
+        Contact: 77730-50900
+      </div>
+    </div>
+  </div>
+
+  <div id="staff" class="tab-content">
+    <!-- Staff Members -->
+    <div class="member-card">
+      <img src="Ajay_Kumar_Tiwari.jpg" alt="Ajay Kumar Tiwari">
+      <div class="member-info">
+        <strong>Ajay Kumar Tiwari</strong><br>
+        Jr. Office Assistant<br>
+        Contact: 98279-17544
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="tomar.jpg" alt="Ram Kumar Singh">
+      <div class="member-info">
+        <strong>Ram Kumar Singh</strong><br>
+        Daily Wages Employee (JOA)<br>
+        Contact: 90391-06693
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Keshar_Sharma.jpg" alt="Keshar Sharma">
+      <div class="member-info">
+        <strong>Keshar Sharma</strong><br>
+        Daily Wages Employee (MTS)<br>
+        Contact: 8962606153
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Vishal_Nath_Jaiswal.jpg" alt="Vishal Nath Jaiswal">
+      <div class="member-info">
+        <strong>Vishal Nath Jaiswal</strong><br>
+        MTS<br>
+        Email: vishalnath.jaiswal@gmail.com<br>
+        Contact: 98274-63130
+      </div>
+    </div>
+  </div>
+
+  <div id="research" class="tab-content">
+    <!-- Research Scholars -->
+    <div class="member-card">
+      <img src="Amitesh_jha.jpg" alt="Amitesh Kumar Jha">
+      <div class="member-info">
+        <strong>Amitesh Kumar Jha</strong><br>
+        Assistant Professor (Research Scholar)<br>
+        Email: amitesh2911@yahoo.co.in<br>
+        Contact: 98279-30291
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Manoj_kumar_pandey.jpg" alt="Manoj Kumar Pandey">
+      <div class="member-info">
+        <strong>Manoj Kumar Pandey</strong><br>
+        Research Scholar<br>
+        Email: manojpnd88@gmail.com<br>
+        Contact: 88176-18359
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Arti_kashyap.jpg" alt="Aarti Kashyap">
+      <div class="member-info">
+        <strong>Aarti Kashyap</strong><br>
+        Research Scholar<br>
+        Email: aarti.kas2009@gmail.com<br>
+        Contact: 96306-66771
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Seema_dewangan.jpg" alt="Seema Dewangan">
+      <div class="member-info">
+        <strong>Seema Dewangan</strong><br>
+        Research Scholar<br>
+        Email: sskd501@gmail.com<br>
+        Contact: 94792-49009
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="priyanka_gupta.jpg" alt="Priyanka Gupta">
+      <div class="member-info">
+        <strong>Priyanka Gupta</strong><br>
+        Research Scholar<br>
+        Email: priyanka13666@gmail.com<br>
+        Contact: 78797-13666
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Pravin_Singh_Yadav.jpg" alt="Pravin Singh Yadav">
+      <div class="member-info">
+        <strong>Pravin Singh Yadav</strong><br>
+        Research Scholar<br>
+        Email: pravinsingh1110@gmail.com<br>
+        Contact: 99077-49524
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Prastavana.jpg" alt="Prastavan">
+      <div class="member-info">
+        <strong>Prastavan</strong><br>
+        Research Scholar<br>
+        Email: prastawana.into@gmail.com<br>
+        Contact: 79870-42019
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Rupesh_Naik.jpg" alt="Rupesh Naik">
+      <div class="member-info">
+        <strong>Rupesh Naik</strong><br>
+        Research Scholar<br>
+        Email: rupeshnaik493@gmail.com<br>
+        Contact: 97707-47840
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Damodar_patel.jpg" alt="Damodar Patel">
+      <div class="member-info">
+        <strong>Damodar Patel</strong><br>
+        Research Scholar<br>
+        Email: damodarpatel7497@gmail.com<br>
+        Contact: 81090-37018
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Rajeshwar_Prasad.jpg" alt="Rajeshwar Prasad">
+      <div class="member-info">
+        <strong>Rajeshwar Prasad</strong><br>
+        Research Scholar<br>
+        Email: rp4464867@gmail.com<br>
+        Contact: 78696-43233
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Preeti_Shukla.jpg" alt="Preeti Shukla">
+      <div class="member-info">
+        <strong>Preeti Shukla</strong><br>
+        Research Scholar<br>
+        Email: sharma.preeti8@gmsil.com<br>
+        Contact: 88893-54445
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Prakash_Pathak.jpg" alt="Prakash Pathak">
+      <div class="member-info">
+        <strong>Prakash Pathak</strong><br>
+        Research Scholar<br>
+        Email: prakashggv4466@gmail.com<br>
+        Contact: 88718-02393
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Anupam_Pandey.jpg" alt="Anupam Pandey">
+      <div class="member-info">
+        <strong>Anupam Pandey</strong><br>
+        Research Scholar<br>
+        Email: anupampandeyggv@gmail.com<br>
+        Contact: 97556-03940
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Hema_Vastrakar.jpg" alt="Hema Vastrakar">
+      <div class="member-info">
+        <strong>Hema Vastrakar</strong><br>
+        Research Scholar<br>
+        Email: kajuvastrakar7595@gmail.com<br>
+        Contact: 79873-01028
+      </div>
+    </div>
+    <div class="member-card">
+      <img src="Himanshu_Sahu.jpg" alt="Himanshu Sahu">
+      <div class="member-info">
+        <strong>Himanshu Sahu</strong><br>
+        Research Scholar<br>
+        Email: himanshusahu115581@gmail.com<br>
+        Contact: 88273-68899
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(event, tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-button');
+
+      tabs.forEach(tab => tab.classList.remove('active'));
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      document.getElementById(tabId).classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
+
